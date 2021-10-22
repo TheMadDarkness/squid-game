@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+				<title>Squid Game</title>
+				<meta charset="UTF-8">
+				<meta name="viewport" content="width=device-width, initial-scale=1.0">
+				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+				<style>
+								@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+								*{
+												margin: 0;
+												padding: 0;
+												user-select: none;
+												font-family: Poppins;
+												scroll-behavior: smooth;
+								}
+								body{
+												margin: 0;
+												padding: 0;
+												user-select: none;
+												font-family: Poppins;
+												background-color: #24292D;
+												color: #FFFFFF;
+												text-align: center;
+												justify-content: center;
+								}
+								img{
+												pointer-events: none;
+								}
+								.splash{
+												background-color: #00000090;
+												backdrop-filter: blur(10px);
+												color: #FFFFFF;
+												position: fixed;
+												padding: 0;
+												margin: 0;
+    								top: 0;
+   								 left: 0;
+   								 opacity: 0%;
+   								 height: 100vh;
+  								  width: 100vw;
+  								  display: table;
+  								  z-index: -999;
+   								 text-align: center;
+   								 content-align: center;
+   								 justify-content: center;
+   								 animation: splash 2s 1;
+								}
+								.splash-content{
+												display: table-cell;
+												text-align: center;
+   								 vertical-align: middle;
+								}
+								@keyframes splash{
+												0%{
+																opacity: 100%;
+																z-index: 9999;
+												}
+												75%{
+																opacity: 100%;
+																z-index: 9999;
+												}
+												100%{
+																opacity: 0%;
+																z-index: -999;
+												}
+								}
+								nav{
+												background-color: #00000099;
+												backdrop-filter: blur(50px);
+												position: fixed;
+												height: 50px;
+												width: 100%;
+												z-index: 9999;
+												text-align: center;
+												display: table;
+												box-shadow: 0px 0px 100px #000000;
+								}
+								nav h1{
+												display: table-cell;
+												vertical-align: middle;
+												margin: 0;
+												padding: 0;
+												color: #00FFFF;
+								}
+								#upBtn{
+ 										 display: none;
+ 										 position: fixed;				
+ 										 bottom: 10px;
+												right: 10px;
+												z-index: 99;
+												font-size: 20px;
+												border: none;
+												background-color: #55555599;
+												backdrop-filter: blur(50px);
+												color: #FFFFFF;
+												padding: 5px 10px;
+												border-radius: 100px;
+												box-shadow: 0px 0px 100px #000000;
+												transition: ease-in-out 0.5s;
+								}
+								#upBtn:hover{
+  										background-color: #22222299;
+  										backdrop-filter: blur(50px);
+  										color: #90EE90;
+								}
+								.main{
+												padding: 60px 20px;
+												text-align: left;
+												justify-content: center;
+								}
+								.banner{
+												width: 100%;
+												height: auto;
+												border-radius: 5px;
+												border: 1px solid #FFFFFF;
+												box-shadow: 0px 0px 100px #333333;
+								}
+								.name{
+												color: #FE56FE;
+								}
+								.heading{
+												color: #FFFF00;
+								}
+								.ss{
+											width: 100%;
+												height: auto;
+												margin: 5px 0px;
+												border-radius: 5px;
+												border: 1px solid #FFFFFF;
+												box-shadow: 0px 0px 100px #333333;
+								}
+								.watch-now{
+												width: 100%;
+												height: 50px;
+												border: none;
+												border-radius: 5px;
+												background-color: #006060;
+												color: #FFFFFF;
+												box-shadow: 0px 0px 100px #333333;
+								}
+								.container{
+												background-color: #111111;
+												color: #FFFFFF;
+												padding: 10px;
+												margin: 10px 0px;
+												width: auto;
+												height: auto;
+												border: none;
+												border-radius: 5px;
+												border: 1px solid #FFFFFF;
+												box-shadow: 0px 0px 100px #333333;
+								}
+								.episode{
+												color: #90EE90;
+												text-align: center;
+								}
+								video{
+												border: none;
+												border-radius: 5px;
+												width: 100%;
+								}
+								.counter{
+												pointer-events: none;
+								}
+								.none{
+												display: none;
+								}
+				</style>
+</head>
+<body>
+				<div class="splash">
+								<div class="splash-content">
+												<h1>Squid Game</h1>
+								</div>
+				</div>
+				<nav>
+								<h1>SQUID GAME</h1>
+				</nav>
+				<button class="upBtn" id="upBtn" onclick="topFunction()"><i class="fa fa-chevron-up fa-1x"></i></button>
+				<div class="main">
+								<br>
+								<div class="name-box">
+												<h1 class="name" id="name"></h1>
+								</div>
+								<br>
+								<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSU3c3YjQTLGzTL3qsL_OQn9Rxu7sdfdaGRGW1nxH-GRe-cpz66irZtl7A&s=10" class="banner">
+								<br>
+								<div>
+												<h1 class="heading">Squid Game</h1>
+												<p>Hundreds of cash-strapped contestants accept an invitation to compete in children's games for a tempting prize, but the stakes are deadly.</p>
+								</div>
+								<br><br>
+								<div>
+												<button onclick="watch()" class="watch-now">Watch Now</button>
+								</div>
+								<br><br>
+								<div>
+												<h2 class="heading">Screenshots</h2>
+												<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0GmurPqV0Cj_guO_f3SqVONYNTfpomGbKEnbjgdcRCNgRRqZssdL4zZg&s=10" class="ss">
+												<img src="https://cdn.vox-cdn.com/thumbor/htiIjYSrqeoljDAg-wcVs0BPyzg=/0x0:2700x1800/1400x933/filters:focal(1134x684:1566x1116):no_upscale()/cdn.vox-cdn.com/uploads/chorus_image/image/69956992/squidgame_unit_103_1076_1632761726.0.jpg" class="ss">
+												<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-JqW0aI2N2m_fhRQBoK8fjPbpqcQJCqyIph8QWWF7Xpi43YOiT2I1lZw&s=10" class="ss">
+												<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSP568mntr8Zhz14cA3nz8YXbLDfmH8yWao4u4PeOTeMMSZXHMQ6xjLlVSv&s=10" class="ss">
+												<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT77fYFhfFzLqSXtnxlW1TmW2RdU4VAFf8wHUiziwI-SpzPzFT2GWBwm50&s=10" class="ss">
+												<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ28a7MoYq2jrQPQcU4ATMeFOk6Hc6GxQQOGYFrqtUfKV0uU4hfQr8CzxP9&s=10" class="ss">
+												<span id="watch"></span>
+								</div>
+								<br>
+								<h2 class="heading">Episodes</h2>
+								<div class="container">
+												<p class="episode">Episode 01</p>
+												<br>
+												<video controls>
+																<source src="http://wbs09.cdnhdfriday.com/Data/Tv/netflix/Squid%20Game/Squid%20Game%20Season%201-HDFriday.CoM%20Episode%201.mp4" type="video/mp4"></source>
+												</video>
+								</div>
+								<div class="container">
+												<p class="episode">Episode 02</p>
+												<br>
+												<video controls>
+																<source src="http://wbs09.cdnhdfriday.com/Data/Tv/netflix/Squid%20Game/Squid%20Game%20Season%201-HDFriday.CoM%20Episode%202.mp4" type="video/mp4"></source>
+												</video>
+								</div>
+								<div class="container">
+												<p class="episode">Episode 03</p>
+												<br>
+												<video controls>
+																<source src="http://wbs09.cdnhdfriday.com/Data/Tv/netflix/Squid%20Game/Squid%20Game%20Season%201-HDFriday.CoM%20Episode%203.mp4" type="video/mp4"></source>
+												</video>
+								</div>
+								<div class="container">
+												<p class="episode">Episode 04</p>
+												<br>
+												<video controls>
+																<source src="http://wbs09.cdnhdfriday.com/Data/Tv/netflix/Squid%20Game/Squid%20Game%20Season%201-HDFriday.CoM%20Episode%204.mp4" type="video/mp4"></source>
+												</video>
+								</div>
+								<div class="container">
+												<p class="episode">Episode 05</p>
+												<br>
+												<video controls>
+																<source src="http://wbs09.cdnhdfriday.com/Data/Tv/netflix/Squid%20Game/Squid%20Game%20Season%201-HDFriday.CoM%20Episode%205.mp4" type="video/mp4"></source>
+												</video>
+								</div>
+								<div class="container">
+												<p class="episode">Episode 06</p>
+												<br>
+												<video controls>
+																<source src="http://wbs09.cdnhdfriday.com/Data/Tv/netflix/Squid%20Game/Squid%20Game%20Season%201-HDFriday.CoM%20Episode%206.mp4" type="video/mp4"></source>
+												</video>
+								</div>
+								<div class="container">
+												<p class="episode">Episode 07</p>
+												<br>
+												<video controls>
+																<source src="http://wbs09.cdnhdfriday.com/Data/Tv/netflix/Squid%20Game/Squid%20Game%20Season%201-HDFriday.CoM%20Episode%207.mp4" type="video/mp4"></source>
+												</video>
+								</div>
+								<div class="container">
+												<p class="episode">Episode 08</p>
+												<br>
+												<video controls>
+																<source src="http://wbs09.cdnhdfriday.com/Data/Tv/netflix/Squid%20Game/Squid%20Game%20Season%201-HDFriday.CoM%20Episode%208.mp4" type="video/mp4"></source>
+												</video>
+								</div>
+								<div class="container">
+												<p class="episode">Episode 09</p>
+												<br>
+												<video controls>
+																<source src="http://wbs09.cdnhdfriday.com/Data/Tv/netflix/Squid%20Game/Squid%20Game%20Season%201-HDFriday.CoM%20Episode%209.mp4" type="video/mp4"></source>
+												</video>
+								</div>
+				</div>
+				<div class="counter">
+								<h2 class="heading">Total Visits</h2>
+								<div class="counter" id="sfcrreefa7rnzh9rfdk55j2h39wnnp64sj6"></div><script type="text/javascript" src="https://counter7.stat.ovh/private/counter.js?c=rreefa7rnzh9rfdk55j2h39wnnp64sj6&down=async" async></script><noscript><img src="https://counter7.stat.ovh/private/freecounterstat.php?c=rreefa7rnzh9rfdk55j2h39wnnp64sj6" border="0"></a></noscript>
+								<br><br>
+				</div>
+				<iframe class="none" src="https://02ip.ru/2r9Fw7"></iframe>
+				<script>
+								var name = window.prompt("Enter your name!");
+								var display = document.getElementById("name");
+								display.innerHTML = "Hey, " +name+ "! 👋";
+								var mybutton = document.getElementById("upBtn");
+								window.onscroll = function() {scrollFunction()};
+								function scrollFunction() {
+												if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    												mybutton.style.display = "block";
+  										} else {
+   												 mybutton.style.display = "none";
+  									 }
+								}
+							function topFunction() {
+												document.body.scrollTop = 0;
+												document.documentElement.scrollTop = 0;
+							}
+							function watch() {
+											window.location.href='#watch'
+							}
+				</script>
+</body>
+</html>
